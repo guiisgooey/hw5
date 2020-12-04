@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<main>
+    <div id="content">
+        <h1>My Plants</h1>
+
+        <a href="/create" class="nav">+ New Plant</a>
+
+        <div id="items">
+
+            {% for plant in plants %}
+            <div class="card">
+                <a href="/plant/{{plant._id}}"><img src="{{plant.photo_url}}"></a>
+                <div class="card-content">
+                    <a href="/plant/{{plant._id}}">Tomato</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</main>
+
+{% endblock content %}
