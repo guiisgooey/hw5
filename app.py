@@ -14,6 +14,7 @@ mongo = PyMongo(app)
 plants_collection = mongo.db.plants
 harvests_collection = mongo.db.harvests
 
+
 ############################################################
 # ROUTES
 ############################################################
